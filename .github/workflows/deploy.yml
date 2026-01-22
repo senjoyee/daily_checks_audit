@@ -120,7 +120,7 @@ jobs:
           fi
 
           echo "Ensuring ingress external:8000..."
-          az containerapp ingress set \
+          az containerapp ingress enable \
             --name "$CONTAINER_APP_NAME" \
             --resource-group "$RESOURCE_GROUP" \
             --type external \
