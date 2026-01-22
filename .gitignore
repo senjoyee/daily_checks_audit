@@ -1,0 +1,19 @@
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Audit reports (generated files)
+audit_report_*.md
+
+# IDE
+.vscode/
+.idea/
+docs/BSW_DAILY_MONITORING_21_January_2026.xlsx
+docs/COREX_DAILY_MONITORING_20_JAN_2026.xlsx
+docs/TBS_DAILY_MONITORING_21_JAN_2026.xlsx
