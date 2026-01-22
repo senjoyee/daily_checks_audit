@@ -22,8 +22,8 @@ env:
   CONTAINER_APP_NAME: daily-checks-audit
   IMAGE_NAME: daily-checks-audit
   PERSON_RESPONSIBLE_TAG: joyee.sen@softwareone.com
-  ACR_NAME: sapservicesuk
-  ACR_LOGIN_SERVER: sapservicesuk.azurecr.io
+  ACR_NAME: sapservicesuk-g8b0edb8fthrbpgj
+  ACR_LOGIN_SERVER: sapservicesuk-g8b0edb8fthrbpgj.azurecr.io
   ALLOW_HOST: "" # optional; leave empty to auto-derive FQDN
 
 jobs:
