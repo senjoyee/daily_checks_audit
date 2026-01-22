@@ -17,7 +17,7 @@ permissions:
 
 env:
   RESOURCE_GROUP: sap-services-uk
-  LOCATION: eastus
+  LOCATION: uksouth
   CONTAINER_APP_ENV: daily-checks-env
   CONTAINER_APP_NAME: daily-checks-audit
   IMAGE_NAME: daily-checks-audit
