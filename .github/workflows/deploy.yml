@@ -17,6 +17,7 @@ permissions:
 
 env:
   RESOURCE_GROUP: sap-services-uk
+  RG_LOCATION: eastus
   LOCATION: uksouth
   CONTAINER_APP_ENV: daily-checks-env
   CONTAINER_APP_NAME: daily-checks-audit
@@ -61,7 +62,7 @@ jobs:
 
       - name: Ensure resource group with required tag
         run: |
-          az group create --name "$RESOURCE_GROUP" --location "$LOCATION" --tags PersonResponsible="$PERSON_RESPONSIBLE_TAG"
+          az group create --name "$RESOURCE_GROUP" --location "$RG_LOCATION" --tags PersonResponsible="$PERSON_RESPONSIBLE_TAG"
           az group update --name "$RESOURCE_GROUP" --set tags.PersonResponsible="$PERSON_RESPONSIBLE_TAG"
 
       - name: Ensure Container Apps environment
